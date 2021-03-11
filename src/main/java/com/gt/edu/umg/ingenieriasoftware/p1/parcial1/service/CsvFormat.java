@@ -8,7 +8,7 @@ import java.util.*;
 import com.fasterxml.jackson.databind.*;
 import com.fasterxml.jackson.dataformat.csv.*;
 
-public class CsvFormat implements IFormat {
+public class CsvFormat implements IFormat,ICsvActions {
 
     @Override
     public void convertCsvToJson(String from,String archive) throws IOException {
