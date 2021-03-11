@@ -20,7 +20,7 @@ import java.io.FileInputStream;
 
 @Controller
 public class DownloadController {
-    private static final String DIRECTORY = "/home/oscarlopez";
+    private static final String DIRECTORY = "/tmp";
 
     @Autowired
     private ServletContext servletContext;
