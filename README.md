@@ -9,4 +9,8 @@ Repositorio que almacena codigo fuente de examen parcial 1 ingenieria de softwar
 ## Funcionamiento 
 - Ejecucion de el servicio
 http:localhost:8080/
--Ejecucion de conversion
+redirigira al index donde podra cargar el archivo
+
+- Ejecucion de conversion
+por ejemplo:
+http://localhost:8080/download?from=archive.csv&as=json (si el archivo no esta cargado no funcionara)
