@@ -5,3 +5,8 @@ Repositorio que almacena codigo fuente de examen parcial 1 ingenieria de softwar
 
 - Oscar Raul Lopez Perez
 - Carnet:1290-17-4138
+
+## Funcionamiento 
+- Ejecucion de el servicio
+http:localhost:8080/
+-Ejecucion de conversion
