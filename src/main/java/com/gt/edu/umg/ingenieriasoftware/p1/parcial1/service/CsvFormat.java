@@ -7,14 +7,17 @@ import java.util.*;
 
 import com.fasterxml.jackson.databind.*;
 import com.fasterxml.jackson.dataformat.csv.*;
+import org.springframework.beans.factory.annotation.Value;
 
 public class CsvFormat implements IFormat,ICsvActions {
+    //@Value("${app.upload.dir:${user.home}}")
+    public String uploadDirr="/tmp";
 
     @Override
     public void convertCsvToJson(String from,String archive) throws IOException {
 
-        File input = new File("/home/oscarlopez/"+from);
-        File output = new File("/home/oscarlopez/"+archive+".json");
+        File input = new File(uploadDirr+"/"+from);
+        File output = new File(uploadDirr+"/"+archive+".json");
 
         CsvSchema csvSchema = CsvSchema.builder().setUseHeader(true).build();
         CsvMapper csvMapper = new CsvMapper();
