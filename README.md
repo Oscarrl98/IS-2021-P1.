@@ -7,7 +7,16 @@ Repositorio que almacena codigo fuente de examen parcial 1 ingenieria de softwar
 - Carnet:1290-17-4138
 
 ## Funcionamiento 
-- Ejecucion de el servicio
+# Imagen docker
+https://hub.docker.com/repository/docker/oscarrl98/parcial1is
+
+- Ejecucion de el servicio con el docker descargado de docker hub
+docker pull oscarrl98/parcial1is
+
+- Iniciar la ejecucion del docker
+docker run -p 8080:8080 -v /tmp:/tmp --name p1app oscarrl98/parcial1is
+
+- Direccion del servicio
 http:localhost:8080/
 redirigira al index donde podra cargar el archivo
 
